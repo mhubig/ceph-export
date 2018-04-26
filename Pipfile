@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 "delegator.py" = "*"
+click = "*"
 
 [dev-packages]
 "flake8" = "*"
