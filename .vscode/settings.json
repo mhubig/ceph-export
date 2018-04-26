@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/Users/markus/.local/share/virtualenvs/implib2-WcyxqGQ9/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true
+}
