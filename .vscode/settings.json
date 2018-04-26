@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/markus/.local/share/virtualenvs/implib2-WcyxqGQ9/bin/python",
+    "python.pythonPath": "${env.VIRTUAL_ENV}/bin/python3.6",
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": ["--max-line-length=100"]
