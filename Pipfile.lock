@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e61515d0ad51c2eb5ecd361cf5c93e6e28ee93de820c15446445bfe291390342"
+            "sha256": "ba8458311bcb7707de629beb664b08feefef0f28b11c60e90413a6bceb58b652"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,6 +31,10 @@
             ],
             "index": "pypi",
             "version": "==0.1.0"
+        },
+        "e1839a8": {
+            "editable": true,
+            "path": "."
         },
         "pexpect": {
             "hashes": [

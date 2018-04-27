@@ -1,5 +1,3 @@
-#!/usr/bin/env python3.6
-
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -57,7 +55,7 @@ def converter(cmd):
 @click.option('--image-pattern', default='^vm', help='Pattern to filter the images.')
 @click.option('--snap-pattern', default='autohourly', help='Pattern to filter the snapshots.')
 @click.option('--debug/--no-debug', default=False, help='Debug and dry-run mode.')
-def run(pool, images, path, image_pattern, snap_pattern, format, debug):
+def cli(pool, images, path, image_pattern, snap_pattern, format, debug):
     """Exports rbd images from a ceph pool, based on the last snapshot."""
 
     if format not in get_list_of_supported_formats(debug):
@@ -78,7 +76,3 @@ def run(pool, images, path, image_pattern, snap_pattern, format, debug):
         convert_commands.append(build_convert_command(image, snap, path, format, debug))
 
     conversion_executor(converter, convert_commands, 4, debug)
-
-
-if __name__ == '__main__':
-    run()

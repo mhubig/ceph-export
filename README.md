@@ -1,6 +1,6 @@
 # ceph-export
 
-Simple python script to export rbd images from a ceph pool, based on the last snapshot.
+Simple app to export rbd images from a ceph pool, based on the last snapshot.
 
 ````bash
 $ ./export.py --help
