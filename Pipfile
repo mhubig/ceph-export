@@ -9,6 +9,7 @@ click = "*"
 
 [dev-packages]
 "flake8" = "*"
+bpython = "*"
 
 [requires]
 python_version = "3.6"

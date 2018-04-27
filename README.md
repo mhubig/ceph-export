@@ -1,6 +1,6 @@
 # ceph-export
 
-Simple python script to export rbd images to vmdk, based on the latest snapshot
+Simple python script to export rbd images from a ceph pool, based on the last snapshot.
 
 ````bash
 $ ./export.py --help
@@ -34,4 +34,13 @@ vm-100-disk-1@autohourly180426180005.vmdk
 vm-101-disk-1@autohourly180426180005.vmdk
 vm-101-disk-2@autohourly180426180005.vmdk
 ...
+````
+
+## Example: Export two rbd images to `/srv/tank/qcow2` using the qcow2 format
+
+````bash
+$ ./export.py pve-images vm-100-disk-1 vm-101-disk-1 --path=/srv/tank/qcow2 --format=qcow2
+$ ls -al /srv/tank/qcow2
+vm-100-disk-1@autohourly180426180005.qcow2
+vm-101-disk-1@autohourly180426180005.qcow2
 ````
