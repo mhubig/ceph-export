@@ -67,6 +67,7 @@ def cli(pool, images, path, image_pattern, snap_pattern, format, debug):
     if not images:
         images = get_list_of_images_from(pool, image_pattern, debug)
     else:
+        images = list(dict.fromkeys(images))  # removing duplicates
         images = [pool / image for image in images]
 
     convert_commands = []
