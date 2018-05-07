@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.6
 
 from setuptools import setup
 
@@ -12,7 +12,7 @@ required = [
 ]
 
 setup(
-    name='ceph-export.py',
+    name='ceph-export',
     version='0.1.0',
     license='MIT',
     description='Simple app to export rbd images from a ceph pool, based on the last snapshot.',
